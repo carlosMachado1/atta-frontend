@@ -14,7 +14,7 @@ module.exports = {
     rules: {
         "semi": [
             "error",
-            "always"
+            "never"
         ],
         "quotes": [
             "error",
@@ -31,7 +31,12 @@ module.exports = {
         "object-curly-spacing": [
             "error",
             "always"
+        ],
+        "vue/no-mutating-props": [
+            "error",
+            {
+                "shallowOnly": true
+            }
         ]
-
     }
 };
